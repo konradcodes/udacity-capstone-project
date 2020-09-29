@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: capstone-project-deployments
+  name: udacity-dev-ops-capstone-project
   labels:
     app: udacity-dev-ops-capstone-project
 spec:
