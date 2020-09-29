@@ -19,7 +19,7 @@ pipeline {
     stage('Push Docker Image') {
       steps {
         withDockerRegistry([url: "", credentialsId: "dockerhub"]) {
-          sh 'docker push konradcodes/udacity-capstone-project'
+          sh 'docker push konradcodes/udacity-dev-ops-capstone-project'
         }
       }
     }
@@ -28,11 +28,6 @@ pipeline {
         withAWS(credentials: "aws") {
           sh 'kubectl apply -f deployments/deployment.yaml'
         }
-      }
-    }
-    stage('Clean Up') {
-      steps {
-        sh 'docker system prune'
       }
     }
   }
