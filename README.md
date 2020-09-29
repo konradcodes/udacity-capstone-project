@@ -2,4 +2,4 @@
 
 Capstone project for Cloud DevOps Nanodegree.
 
-Rolling Updates deployment process was used for CD of the application
+Rolling Updates deployment process was used for CD of the application.
