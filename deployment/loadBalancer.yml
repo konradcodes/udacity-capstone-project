@@ -1,0 +1,13 @@
+apiVersion: v01
+kind: Service
+metadata:
+  name: udacity-DevOps-capstone-project
+  labels:
+    app: udacity-DevOps-capstone-project
+spec:
+  type: LoadBalancer
+  selector:
+    app: udacity-DevOps-capstone-project
+  ports:
+    - port: 80
+      targetPort: 80
