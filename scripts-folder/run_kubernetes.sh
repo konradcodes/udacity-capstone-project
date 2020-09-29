@@ -3,7 +3,7 @@
 #Uploads the image to docker hub and tags it
 
 # Step 1:
-dockerpath=konradcodes/udacity-DevOps-capstone-project
+dockerpath=konradcodes/udacity-dev-ops-capstone-project
 
 # Step 2
 # Run the Docker Hub container with kubernetes
@@ -17,4 +17,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose deployment udacity-DevOps-capstone-project --type=LoadBalancer --port=80
+kubectl expose deployment udacity-dev-ops-capstone-project --type=LoadBalancer --port=80

@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        sh 'docker build -t konradcodes/udacity-capstone-project .'
+        sh 'docker build -t konradcodes/udacity-dev-ops-capstone-project .'
       }
     }
     stage('Push Docker Image') {

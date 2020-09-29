@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: capstone-project-deployments
   labels:
-    app: udacity-DevOps-capstone-project
+    app: udacity-dev-ops-capstone-project
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: udacity-DevOps-capstone-project
+      app: udacity-dev-ops-capstone-project
   template:
     metadata:
       labels:
-        app: udacity-DevOps-capstone-project
+        app: udacity-dev-ops-capstone-project
     spec:
       containers:
-        - name: udacity-DevOps-capstone-project
-          image: konradcodes/udacity-DevOps-capstone-project:v01
+        - name: udacity-dev-ops-capstone-project
+          image: konradcodes/udacity-dev-ops-capstone-project:v01
           imagePullPolicy: 'Always'
           ports:
             - containerPort: 80
