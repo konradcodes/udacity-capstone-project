@@ -7,7 +7,7 @@ dockerpath=konradcodes/udacity-dev-ops-capstone-project
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run capstone-app --image=$dockerpath --port=80
+kubectl run udacity-dev-ops-capstone-project --image=$dockerpath --port=80
 
 
 # Step 3:

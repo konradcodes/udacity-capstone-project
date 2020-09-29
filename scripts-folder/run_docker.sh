@@ -2,7 +2,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t udacity-dev-ops-capstone-project .
+docker build -t konradcodes/udacity-dev-ops-capstone-project .
 
 # Step 2:
 # Listing docker images
