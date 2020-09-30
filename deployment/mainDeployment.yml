@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udacity-dev-ops-capstone-project
-          image: konradcodes/udacity-dev-ops-capstone-project:latest
+          image: konradcodes/udacity-dev-ops-capstone-project
           imagePullPolicy: 'Always'
           ports:
             - containerPort: 80
