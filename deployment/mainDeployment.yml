@@ -1,7 +1,7 @@
-apiVersion: extensions/v1beta1
+apiVersion: v2
 kind: Deployment
 metadata:
-  name: udacity-dev-ops-capstone-project-final
+  name: deployment
   labels:
     app: udacity-dev-ops-capstone-project-final
 spec:
@@ -15,7 +15,7 @@ spec:
         app: udacity-dev-ops-capstone-project-final
     spec:
       containers:
-        - name: udacity-dev-ops-capstone-project
+        - name: udacity-dev-ops-capstone-project-final
           image: konradcodes/udacity-dev-ops-capstone-project
           imagePullPolicy: 'Always'
           ports:
