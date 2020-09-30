@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udacity-dev-ops-capstone-project-67d6f5c566-rfd9t
+  name: udacity-dev-ops-capstone-project
   labels:
     app: udacity-dev-ops-capstone-project
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: udacity-dev-ops-capstone-project
+      app: unique-creature-1601486709
   template:
     metadata:
       labels:
-        app: udacity-dev-ops-capstone-project
+        app: unique-creature-1601486709
     spec:
       containers:
         - name: udacity-dev-ops-capstone-project
