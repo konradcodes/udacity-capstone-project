@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: deployment
   labels:
-    app: udacity-dev-ops-capstone-project-67d6f5c566-qlbfh
+    app: udacity-dev-ops-capstone-project
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: udacity-dev-ops-capstone-project-67d6f5c566-qlbfh
+      app: udacity-dev-ops-capstone-project
   template:
     metadata:
       labels:
-        app: udacity-dev-ops-capstone-project-67d6f5c566-qlbfh
+        app: udacity-dev-ops-capstone-project
     spec:
       containers:
-        - name: udacity-dev-ops-capstone-project-67d6f5c566-qlbfh
+        - name: udacity-dev-ops-capstone-project
           image: konradcodes/udacity-dev-ops-capstone-project
           imagePullPolicy: 'Always'
           ports:
