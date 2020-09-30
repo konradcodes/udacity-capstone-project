@@ -19,4 +19,5 @@ spec:
           image: konradcodes/udacity-dev-ops-capstone-project
           imagePullPolicy: 'Always'
           ports:
+            - name: 'http-server'
             - containerPort: 80
