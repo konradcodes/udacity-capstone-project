@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: unique-creature-1601486709
+      app: udacity-dev-ops-capstone-project
   template:
     metadata:
       labels:
-        app: unique-creature-1601486709
+        app: udacity-dev-ops-capstone-project
     spec:
       containers:
         - name: udacity-dev-ops-capstone-project
