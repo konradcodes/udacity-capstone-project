@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udacity-dev-ops-capstone-project
+  name: udacity-dev-ops-capstone-project-67d6f5c566-rfd9t
   labels:
     app: udacity-dev-ops-capstone-project
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udacity-dev-ops-capstone-project
-          image: konradcodes/udacity-dev-ops-capstone-project:v01
+          image: konradcodes/udacity-dev-ops-capstone-project
           imagePullPolicy: 'Always'
           ports:
             - containerPort: 80
