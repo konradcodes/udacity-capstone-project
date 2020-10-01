@@ -23,6 +23,13 @@ pipeline {
         }
       }
     }
+    stage('Create kube config file') {
+      steps {
+        withAWS(region:'us-east-2', credentials:'aws-static') {
+          sh 'aws eks --region us-east-2 update-kubeconfig --name unique-creature-1601486709'
+        }
+      }
+    }
     stage('Deployment') {
       steps {
         withAWS(region:'us-east-2', credentials:'aws-static') {
